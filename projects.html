@@ -9,121 +9,121 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <div id="header-placeholder"></div>
-    <main class="main-content">
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="tabs">
-                <button class="tab-button active" onclick="openTab('ml-projects-tab')">Machine Learning</button>
-                <button class="tab-button" onclick="openTab('geospatial-projects-tab')">Geospatial Analysis</button>
-                <button class="tab-button" onclick="openTab('data-analysis-projects-tab')">Data Analysis</button>
-                <button class="tab-button" onclick="openTab('database-projects-tab')">Database Projects</button>
-                <button class="tab-button" onclick="openTab('web-apps-tab')">Web Applications</button>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="assets/images/profile.jpg" alt="Vaishali Kondoju" class="profile-img">
+                <h3>Vaishali Kondoju</h3>
+                <p>Software Engineer and Data Science Graduate</p>
             </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="skills.html">Skills & Experience</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <section id="projects">
+                <h2>Projects</h2>
+                <div class="tabs">
+                    <button class="tab-button active" onclick="openTab('ml-projects-tab')">Machine Learning</button>
+                    <button class="tab-button" onclick="openTab('geospatial-projects-tab')">Geospatial Analysis</button>
+                    <button class="tab-button" onclick="openTab('data-analysis-projects-tab')">Data Analysis</button>
+                    <button class="tab-button" onclick="openTab('database-projects-tab')">Database Projects</button>
+                    <button class="tab-button" onclick="openTab('web-apps-tab')">Web Applications</button>
+                </div>
 
-            <!-- Machine Learning Projects -->
-            <div id="ml-projects-tab" class="tab-content active">
-                <h3>Machine Learning Projects</h3>
-                <div class="project-container">
-                    <div class="project-card">
-                        <img src="assets/images/project1.jpg" alt="CineMatch Project" class="project-img">
-                        <h4>CineMatch: Personalized Movie Recommendation System</h4>
-                        <p>Developed a personalized recommendation engine using Python, Scikit-learn, TF-IDF vectorization, and cosine similarity, analyzing 5,000+ IMDB movies to enhance content discovery across streaming platforms. Built a web application with Flask, JavaScript, HTML, and CSS, enabling dynamic user interactions, while leveraging NumPy, Pandas, and Seaborn for data analysis and optimizing recommendation accuracy by 30%.</p>
-                        <p class="tools"><strong>Tools/Skills:</strong> Python, Scikit-learn, Flask, JavaScript, HTML, CSS, NumPy, Pandas, Seaborn, Spark SQL</p>
-                        <div class="project-links">
-                            <a href="https://github.com/vaishali-kondoju/cinematch" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                            <!-- Add website link if applicable -->
+                <!-- Machine Learning Projects -->
+                <div id="ml-projects-tab" class="tab-content active">
+                    <h3>Machine Learning Projects</h3>
+                    <div class="project-container">
+                        <div class="project-card">
+                            <img src="assets/images/project1.jpg" alt="CineMatch Project" class="project-img">
+                            <h4>CineMatch: Personalized Movie Recommendation System</h4>
+                            <p>Developed a personalized recommendation engine using Python, Scikit-learn, TF-IDF vectorization, and cosine similarity, analyzing 5,000+ IMDB movies to enhance content discovery across streaming platforms. Built a web application with Flask, JavaScript, HTML, and CSS, enabling dynamic user interactions, while leveraging NumPy, Pandas, and Seaborn for data analysis and optimizing recommendation accuracy by 30%.</p>
+                            <p class="tools"><strong>Tools/Skills:</strong> Python, Scikit-learn, Flask, JavaScript, HTML, CSS, NumPy, Pandas, Seaborn, Spark SQL</p>
+                            <div class="project-links">
+                                <a href="https://github.com/vaishali-kondoju/cinematch" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                                <!-- Add website link if applicable -->
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Geospatial Analysis Projects -->
-            <div id="geospatial-projects-tab" class="tab-content">
-                <h3>Geospatial Analysis Projects</h3>
-                <div class="project-container">
-                    <div class="project-card">
-                        <img src="assets/images/project2.jpg" alt="Geospatial Analysis of Healthcare Access Project" class="project-img">
-                        <h4>Geospatial Analysis of Healthcare Access & Social Determinants</h4>
-                        <p>Conducted a comprehensive GIS analysis using ArcGIS Pro to map healthcare facilities, including hospitals, clinics, and emergency food services, enhancing healthcare access visibility in underserved communities. Performed advanced spatial analysis (e.g., buffer analysis, proximity calculations), identifying gaps in healthcare services and recommending 5 new clinic locations to meet demand in underserved areas. Mapped social determinants (e.g., income, education) and analyzed their correlation with healthcare access, providing insights that helped local healthcare providers optimize services, leading to a 20% increase in patient reach.</p>
-                        <p class="tools"><strong>Tools/Skills:</strong> ArcGIS Pro, Statistical Analysis, Geospatial Analysis</p>
-                        <div class="project-links">
-                            <a href="https://github.com/vaishali-kondoju/healthcare-access-analysis" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                            <!-- Add website link if applicable -->
+                <!-- Geospatial Analysis Projects -->
+                <div id="geospatial-projects-tab" class="tab-content">
+                    <h3>Geospatial Analysis Projects</h3>
+                    <div class="project-container">
+                        <div class="project-card">
+                            <img src="assets/images/project2.jpg" alt="Geospatial Analysis of Healthcare Access Project" class="project-img">
+                            <h4>Geospatial Analysis of Healthcare Access & Social Determinants</h4>
+                            <p>Conducted a comprehensive GIS analysis using ArcGIS Pro to map healthcare facilities, including hospitals, clinics, and emergency food services, enhancing healthcare access visibility in underserved communities. Performed advanced spatial analysis (e.g., buffer analysis, proximity calculations), identifying gaps in healthcare services and recommending 5 new clinic locations to meet demand in underserved areas. Mapped social determinants (e.g., income, education) and analyzed their correlation with healthcare access, providing insights that helped local healthcare providers optimize services, leading to a 20% increase in patient reach.</p>
+                            <p class="tools"><strong>Tools/Skills:</strong> ArcGIS Pro, Statistical Analysis, Geospatial Analysis</p>
+                            <div class="project-links">
+                                <a href="https://github.com/vaishali-kondoju/healthcare-access-analysis" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                                <!-- Add website link if applicable -->
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Data Analysis Projects -->
-            <div id="data-analysis-projects-tab" class="tab-content">
-                <h3>Data Analysis Projects</h3>
-                <div class="project-container">
-                    <div class="project-card">
-                        <img src="assets/images/project3.jpg" alt="Health, Nutrition, and Population Data Analysis Project" class="project-img">
-                        <h4>Health, Nutrition, and Population Data Analysis</h4>
-                        <p>Conducted trend analysis on maternal mortality, HIV prevalence, and undernutrition using global health datasets, identifying regions with the highest disparities. Developed Tableau dashboards showcasing health disparities across low-, middle-, and high-income countries, highlighting access to healthcare services and nutrition programs.</p>
-                        <p class="tools"><strong>Tools/Skills:</strong> Tableau, SQL, Python</p>
-                        <div class="project-links">
-                            <a href="https://github.com/vaishali-kondoju/health-nutrition-analysis" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                            <!-- Add website link if applicable -->
+                <!-- Data Analysis Projects -->
+                <div id="data-analysis-projects-tab" class="tab-content">
+                    <h3>Data Analysis Projects</h3>
+                    <div class="project-container">
+                        <div class="project-card">
+                            <img src="assets/images/project3.jpg" alt="Health, Nutrition, and Population Data Analysis Project" class="project-img">
+                            <h4>Health, Nutrition, and Population Data Analysis</h4>
+                            <p>Conducted trend analysis on maternal mortality, HIV prevalence, and undernutrition using global health datasets, identifying regions with the highest disparities. Developed Tableau dashboards showcasing health disparities across low-, middle-, and high-income countries, highlighting access to healthcare services and nutrition programs.</p>
+                            <p class="tools"><strong>Tools/Skills:</strong> Tableau, SQL, Python</p>
+                            <div class="project-links">
+                                <a href="https://github.com/vaishali-kondoju/health-nutrition-analysis" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                                <!-- Add website link if applicable -->
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Database Projects -->
-            <div id="database-projects-tab" class="tab-content">
-                <h3>Database Projects</h3>
-                <div class="project-container">
-                    <div class="project-card">
-                        <img src="assets/images/project4.jpg" alt="BRFF Nutrition Obesity Database Project" class="project-img">
-                        <h4>BRFF Nutrition Obesity Database Design</h4>
-                        <p>Designed and implemented the BRFSS Nutrition Obesity database using SQL Developer and Draw.io for ER diagram, creating a normalized database schema to store and analyze nutrition and obesity data from 10,000+ respondents. Leveraged DBMS principles (normalization, indexing) to optimize database performance and reduce redundancy, leading to more streamlined data operations.</p>
-                        <p class="tools"><strong>Tools/Skills:</strong> SQL, DBMS principles, SQL Developer, Draw.io</p>
-                        <div class="project-links">
-                            <a href="https://github.com/vaishali-kondoju/brff-nutrition-database" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                            <!-- Add website link if applicable -->
+                <!-- Database Projects -->
+                <div id="database-projects-tab" class="tab-content">
+                    <h3>Database Projects</h3>
+                    <div class="project-container">
+                        <div class="project-card">
+                            <img src="assets/images/project4.jpg" alt="BRFF Nutrition Obesity Database Project" class="project-img">
+                            <h4>BRFF Nutrition Obesity Database Design</h4>
+                            <p>Designed and implemented the BRFSS Nutrition Obesity database using SQL Developer and Draw.io for ER diagram, creating a normalized database schema to store and analyze nutrition and obesity data from 10,000+ respondents. Leveraged DBMS principles (normalization, indexing) to optimize database performance and reduce redundancy, leading to more streamlined data operations.</p>
+                            <p class="tools"><strong>Tools/Skills:</strong> SQL, DBMS principles, SQL Developer, Draw.io</p>
+                            <div class="project-links">
+                                <a href="https://github.com/vaishali-kondoju/brff-nutrition-database" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                                <!-- Add website link if applicable -->
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Web Applications -->
-            <div id="web-apps-tab" class="tab-content">
-                <h3>Web Applications</h3>
-                <div class="project-container">
-                    <div class="project-card">
-                        <img src="assets/images/project5.jpg" alt="Employee Tracking System Project" class="project-img">
-                        <h4>Employee Tracking System – 3-Tier Web Application</h4>
-                        <p>Designed and implemented a secure, role-based employee management system with four user types—HR, Manager, Employee, and Super Admin—enhancing organizational efficiency and HR process visibility. Developed user modules for login, registration, attendance tracking, leave management, and training workflows, supporting CRUD operations and real-time data access. Created an admin dashboard for HR and Super Admins to manage employee profiles, assign tasks, and generate summary reports, streamlining operations across departments. Hosted on IU Apache server using Linux environment for deployment, enabling real-time testing and validation of system functionalities.</p>
-                        <p class="tools"><strong>Tools/Skills:</strong> HTML, CSS, PHP, JavaScript, SQL, DBMS principles, Linux</p>
-                        <div class="project-links">
-                            <a href="https://github.com/vaishali-kondoju/employee-tracking-system" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                            <!-- Add website link if applicable -->
+                <!-- Web Applications -->
+                <div id="web-apps-tab" class="tab-content">
+                    <h3>Web Applications</h3>
+                    <div class="project-container">
+                        <div class="project-card">
+                            <img src="assets/images/project5.jpg" alt="Employee Tracking System Project" class="project-img">
+                            <h4>Employee Tracking System – 3-Tier Web Application</h4>
+                            <p>Designed and implemented a secure, role-based employee management system with four user types—HR, Manager, Employee, and Super Admin—enhancing organizational efficiency and HR process visibility. Developed user modules for login, registration, attendance tracking, leave management, and training workflows, supporting CRUD operations and real-time data access. Created an admin dashboard for HR and Super Admins to manage employee profiles, assign tasks, and generate summary reports, streamlining operations across departments. Hosted on IU Apache server using Linux environment for deployment, enabling real-time testing and validation of system functionalities.</p>
+                            <p class="tools"><strong>Tools/Skills:</strong> HTML, CSS, PHP, JavaScript, SQL, DBMS principles, Linux</p>
+                            <div class="project-links">
+                                <a href="https://github.com/vaishali-kondoju/employee-tracking-system" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                                <!-- Add website link if applicable -->
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </main>
+            </section>
+        </main>
     </div>
     <script src="js/main.js"></script>
-    <script>
-        fetch('header.html')
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Failed to load header');
-                }
-                return response.text();
-            })
-            .then(data => {
-                document.getElementById('header-placeholder').innerHTML = data;
-            })
-            .catch(error => {
-                console.error('Error loading header:', error);
-                document.getElementById('header-placeholder').innerHTML = '<p>Error loading header. Please refresh the page.</p>';
-            });
-    </script>
 </body>
 </html>

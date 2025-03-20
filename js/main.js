@@ -1,23 +1,4 @@
-// Function to load the header dynamically
-function loadHeader(pageTitle) {
-    fetch('header.html')
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Failed to load header');
-            }
-            return response.text();
-        })
-        .then(data => {
-            document.getElementById('header-placeholder').innerHTML = data;
-            document.title = pageTitle;
-        })
-        .catch(error => {
-            console.error('Error loading header:', error);
-            document.getElementById('header-placeholder').innerHTML = '<p>Error loading header. Please refresh the page.</p>';
-        });
-}
-
-// Function to open tabs (already in main.js)
+// Function to open tabs
 function openTab(tabId) {
     const tabContents = document.querySelectorAll('.tab-content');
     tabContents.forEach(content => {

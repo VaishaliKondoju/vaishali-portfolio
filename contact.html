@@ -9,44 +9,44 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <div id="header-placeholder"></div>
-    <main class="main-content">
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Feel free to reach out to me for collaborations, opportunities, or just to say hi!</p>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <a href="mailto:vaishali.kondoju@example.com">vaishali.kondoju@example.com</a>
-                </div>
-                <div class="contact-item">
-                    <i class="fab fa-linkedin"></i>
-                    <a href="https://www.linkedin.com/in/vaishali-kondoju" target="_blank">LinkedIn</a>
-                </div>
-                <div class="contact-item">
-                    <i class="fab fa-github"></i>
-                    <a href="https://github.com/vaishali-kondoju" target="_blank">GitHub</a>
-                </div>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="assets/images/profile.jpg" alt="Vaishali Kondoju" class="profile-img">
+                <h3>Vaishali Kondoju</h3>
+                <p>Software Engineer and Data Science Graduate</p>
             </div>
-        </section>
-    </main>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="skills.html">Skills & Experience</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>Feel free to reach out to me for collaborations, opportunities, or just to say hi!</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:vaishali.kondoju@example.com">vaishali.kondoju@example.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <a href="https://www.linkedin.com/in/vaishali-kondoju" target="_blank">LinkedIn</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/vaishali-kondoju" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </section>
+        </main>
     </div>
     <script src="js/main.js"></script>
-    <script>
-        fetch('header.html')
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Failed to load header');
-                }
-                return response.text();
-            })
-            .then(data => {
-                document.getElementById('header-placeholder').innerHTML = data;
-            })
-            .catch(error => {
-                console.error('Error loading header:', error);
-                document.getElementById('header-placeholder').innerHTML = '<p>Error loading header. Please refresh the page.</p>';
-            });
-    </script>
 </body>
 </html>
