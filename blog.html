@@ -1,37 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog - Vaishali Kondoju</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class="container">
-        <aside class="sidebar">
-            <div class="profile">
-                <img src="assets/images/profile.jpg" alt="Vaishali Kondoju" class="profile-img">
-                <h3>Vaishali Kondoju</h3>
-                <p>Applied Data Scientist & Software Engineer</p>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="skills.html">Skills & Experience</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                </ul>
-            </nav>
-        </aside>
-        <main class="main-content">
-            <section id="blog">
-                <h2>Blog</h2>
-                <p>Coming soon! Stay tuned for technical deep dives and project insights.</p>
-            </section>
-        </main>
-    </div>
-    <script src="js/main.js"></script>
+<div id="header-placeholder"></div>
+<main class="main-content">
+    <section id="blog">
+        <h2>Blog</h2>
+        <p>Coming soon! I'll be sharing insights on data science, software engineering, and more.</p>
+    </section>
+</main>
+</div>
+<script src="js/main.js"></script>
+<script>
+    // Load the header dynamically and update the page title
+    fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-placeholder').innerHTML = data;
+            document.title = "Blog - Vaishali Kondoju";
+        })
+        .catch(error => console.error('Error loading header:', error));
+</script>
 </body>
 </html>
