@@ -67,8 +67,8 @@ nav a:hover {
 }
 
 .profile-img {
-    width: 150px;
-    height: 150px;
+    width: 200px; /* Increased size */
+    height: 200px; /* Increased size */
     border-radius: 50%;
     object-fit: cover;
 }
@@ -81,20 +81,20 @@ nav a:hover {
     font-size: 3em;
     font-weight: 600;
     margin-bottom: 10px;
-    color: #FFFFFF; /* White text */
+    color: #FFFFFF; /* White for heading */
 }
 
 #home h2 {
     font-size: 1.5em;
     font-weight: 300;
-    color: #E0E0E0; /* Light gray for secondary text */
+    color: #FF6F61; /* Coral for subheading */
     margin-bottom: 20px;
 }
 
 #home p {
     font-size: 1.1em;
     font-weight: 300;
-    color: #FFFFFF;
+    color: #E0E0E0; /* Light gray for content */
 }
 
 /* About Section */
@@ -110,7 +110,7 @@ nav a:hover {
     font-size: 2.5em;
     font-weight: 600;
     margin-bottom: 30px;
-    color: #FFFFFF;
+    color: #FFFFFF; /* White for section headings */
 }
 
 .about-content {
@@ -125,8 +125,8 @@ nav a:hover {
 }
 
 .profile-img {
-    width: 150px;
-    height: 150px;
+    width: 200px; /* Increased size */
+    height: 200px; /* Increased size */
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 15px;
@@ -136,13 +136,13 @@ nav a:hover {
     font-size: 1.5em;
     font-weight: 600;
     margin-bottom: 5px;
-    color: #FFFFFF;
+    color: #FFFFFF; /* White for profile name */
 }
 
 .profile p {
     font-size: 1em;
     font-weight: 300;
-    color: #E0E0E0;
+    color: #FF6F61; /* Coral for profile subtitle */
     margin-bottom: 15px;
 }
 
@@ -169,7 +169,7 @@ nav a:hover {
     font-size: 1.1em;
     font-weight: 300;
     margin-bottom: 20px;
-    color: #FFFFFF;
+    color: #E0E0E0; /* Light gray for bio content */
 }
 
 .download-links {
@@ -204,7 +204,7 @@ nav a:hover {
     font-size: 1.5em;
     font-weight: 600;
     margin-bottom: 15px;
-    color: #FFFFFF;
+    color: #FFFFFF; /* White for subsection headings */
 }
 
 .skills ul, .education ul {
@@ -215,7 +215,7 @@ nav a:hover {
     font-size: 1em;
     font-weight: 300;
     margin-bottom: 10px;
-    color: #E0E0E0;
+    color: #E0E0E0; /* Light gray for list items */
 }
 
 /* Projects Section */
@@ -273,7 +273,7 @@ nav a:hover {
 }
 
 #blog p {
-    color: #FFFFFF;
+    color: #E0E0E0; /* Light gray for content */
 }
 
 /* Contact Section */
@@ -291,22 +291,22 @@ nav a:hover {
     font-size: 2.5em;
     font-weight: 600;
     margin-bottom: 20px;
-    color: #FFFFFF;
+    color: #FFFFFF; /* White for heading */
 }
 
 #contact p {
     font-size: 1.1em;
     margin-bottom: 20px;
-    color: #FFFFFF;
+    color: #E0E0E0; /* Light gray for content */
 }
 
 #contact a {
-    color: #FF6F61;
+    color: #FF6F61; /* Coral accent */
     text-decoration: none;
 }
 
 #contact a:hover {
-    color: #E65B50;
+    color: #E65B50; /* Darker coral on hover */
 }
 
 /* Responsive Design */
