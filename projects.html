@@ -99,11 +99,12 @@
 </div>
 <script src="js/main.js"></script>
 <script>
-    // Load the header dynamically
+    // Load the header dynamically and update the page title
     fetch('header.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById('header-placeholder').innerHTML = data;
+            document.title = "Projects - Vaishali Kondoju";
         })
         .catch(error => console.error('Error loading header:', error));
 </script>
