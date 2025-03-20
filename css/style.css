@@ -8,8 +8,8 @@
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    color: #fff;
-    background-color: #1B263B; /* Deep navy blue background */
+    color: #333333; /* Dark gray for main content text */
+    background-color: #F5F7FA; /* Off-white background */
 }
 
 /* Container for sidebar and main content */
@@ -21,7 +21,7 @@ body {
 /* Sidebar */
 .sidebar {
     width: 250px;
-    background-color: #0D1B2A; /* Darker shade for sidebar */
+    background-color: #2C3E50; /* Muted teal for sidebar */
     padding: 30px 20px;
     position: fixed;
     height: 100%;
@@ -79,14 +79,14 @@ body {
     margin-left: 250px; /* Match sidebar width */
     flex: 1;
     padding: 50px;
-    background-color: #1B263B;
+    background-color: #F5F7FA; /* Off-white background */
 }
 
 /* Home Section */
 #home h2 {
     font-size: 1.2em;
     font-weight: 300;
-    color: #E0E0E0; /* Light gray for "My Work" and "About Me" */
+    color: #666666; /* Medium gray for "My Work" */
     text-transform: uppercase;
     margin-bottom: 10px;
 }
@@ -94,7 +94,7 @@ body {
 #home h1 {
     font-size: 2.5em;
     font-weight: 600;
-    color: #FFFFFF; /* White for "Recent Work" */
+    color: #333333; /* Dark gray for "Recent Work" */
     text-transform: uppercase;
     margin-bottom: 30px;
 }
@@ -120,15 +120,36 @@ body {
 
 .work-item p {
     font-size: 1em;
-    color: #E0E0E0; /* Light gray for project names */
+    color: #333333; /* Dark gray for project names */
     text-align: center;
+}
+
+/* About Me Section */
+.about-me {
+    margin-top: 50px;
+}
+
+.section-label {
+    font-size: 1.2em;
+    font-weight: 300;
+    color: #666666; /* Medium gray for "About Me" label */
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.about-me h1 {
+    font-size: 2.5em;
+    font-weight: 600;
+    color: #333333; /* Dark gray for "Who Am I?" */
+    text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
 .bio p {
     font-size: 1.1em;
     font-weight: 300;
     margin-bottom: 20px;
-    color: #E0E0E0; /* Light gray for bio content */
+    color: #666666; /* Medium gray for bio content */
 }
 
 .download-links {
@@ -151,12 +172,44 @@ body {
     background-color: #E65B50; /* Darker coral on hover */
 }
 
+.expertise-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.expertise-card {
+    width: calc(20% - 16px); /* Five cards per row, accounting for gap */
+    background-color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.expertise-card i {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.expertise-card i.fa-code { color: #3498DB; } /* Blue for Software */
+.expertise-card i.fa-brain { color: #F39C12; } /* Orange for ML */
+.expertise-card i.fa-globe { color: #2ECC71; } /* Green for Web Apps */
+.expertise-card i.fa-chart-bar { color: #E74C3C; } /* Red for Data Viz */
+.expertise-card i.fa-map-marked-alt { color: #8E44AD; } /* Purple for Geospatial */
+
+.expertise-card h3 {
+    font-size: 1em;
+    font-weight: 600;
+    color: #333333;
+}
+
 /* Skills & Experience Section */
 #skills h2, #projects h2, #blog h2, #contact h2 {
     font-size: 2.5em;
     font-weight: 600;
     margin-bottom: 30px;
-    color: #FFFFFF; /* White for section headings */
+    color: #333333; /* Dark gray for section headings */
 }
 
 .details {
@@ -172,7 +225,7 @@ body {
     font-size: 1.5em;
     font-weight: 600;
     margin-bottom: 15px;
-    color: #FFFFFF; /* White for subsection headings */
+    color: #333333; /* Dark gray for subsection headings */
 }
 
 .skills ul, .experience ul {
@@ -183,7 +236,7 @@ body {
     font-size: 1em;
     font-weight: 300;
     margin-bottom: 10px;
-    color: #E0E0E0; /* Light gray for list items */
+    color: #666666; /* Medium gray for list items */
 }
 
 /* Projects Section */
@@ -196,7 +249,7 @@ body {
 .project-card {
     width: calc(50% - 10px); /* Two cards per row */
     padding: 20px;
-    background-color: #0D1B2A; /* Darker shade for cards */
+    background-color: #FFFFFF; /* White for cards */
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
@@ -205,13 +258,13 @@ body {
     font-size: 1.3em;
     font-weight: 600;
     margin-bottom: 10px;
-    color: #FFFFFF;
+    color: #333333;
 }
 
 .project-card p {
     font-size: 1em;
     margin-bottom: 10px;
-    color: #E0E0E0;
+    color: #666666;
 }
 
 .project-card a {
@@ -226,14 +279,14 @@ body {
 
 /* Blog Section */
 #blog p {
-    color: #E0E0E0; /* Light gray for content */
+    color: #666666; /* Medium gray for content */
 }
 
 /* Contact Section */
 #contact p {
     font-size: 1.1em;
     margin-bottom: 20px;
-    color: #E0E0E0; /* Light gray for content */
+    color: #666666; /* Medium gray for content */
 }
 
 #contact a {
@@ -253,7 +306,7 @@ body {
 
 .social-icons i {
     font-size: 24px;
-    color: #fff;
+    color: #333333;
 }
 
 .social-icons i:hover {
@@ -279,6 +332,10 @@ body {
 
     .work-item, .project-card {
         width: 100%;
+    }
+
+    .expertise-card {
+        width: calc(50% - 10px); /* Two cards per row on mobile */
     }
 
     .details {
