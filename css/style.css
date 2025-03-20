@@ -179,7 +179,7 @@ body {
     color: #333333;
 }
 
-/* Skills & Experience Section */
+/* Skills, Projects, Blog, Contact Section Headings */
 #skills h2, #projects h2, #blog h2, #contact h2 {
     font-size: 2.5em;
     font-weight: 600;
@@ -192,6 +192,7 @@ body {
     display: flex;
     gap: 10px;
     margin-bottom: 30px;
+    flex-wrap: wrap; /* Allow tabs to wrap on smaller screens */
 }
 
 .tab-button {
@@ -225,7 +226,9 @@ body {
 }
 
 /* Skills Tab */
-#skills-tab h3, #experience-tab h3 {
+#skills-tab h3, #experience-tab h3, 
+#ml-projects-tab h3, #web-apps-tab h3, 
+#geospatial-projects-tab h3, #database-projects-tab h3 {
     font-size: 1.8em;
     font-weight: 600;
     margin-bottom: 20px;
@@ -336,17 +339,6 @@ body {
 }
 
 /* Projects Section */
-.project-category {
-    margin-bottom: 40px;
-}
-
-.project-category h3 {
-    font-size: 1.8em;
-    font-weight: 600;
-    margin-bottom: 20px;
-    color: #FF6F61; /* Coral for category headings */
-}
-
 .project-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -496,5 +488,10 @@ body {
 
     .project-img {
         height: 150px;
+    }
+
+    .tab-button {
+        padding: 8px 15px;
+        font-size: 0.9em;
     }
 }
