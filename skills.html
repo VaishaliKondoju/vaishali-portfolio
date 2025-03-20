@@ -29,47 +29,110 @@
         <main class="main-content">
             <section id="skills">
                 <h2>Skills & Experience</h2>
-                <div class="details">
-                    <div class="experience">
-                        <h3>Experience</h3>
-                        <div class="experience-item">
-                            <h4>Project Lead & Graduate Research Assistant, Indiana University</h4>
-                            <p class="date">Aug 2023 – Present</p>
-                            <ul>
-                                <li>Leading the Knowledge Indiana Project Team, overseeing research initiatives and coordinating data analytics efforts, including managing information through WordPress and working on various test cases in the Indianapolis Wikipedia.</li>
-                                <li>Worked on The Polis Center website for user testing, identifying usability issues and improving navigation efficiency.</li>
-                                <li>Applied GIS techniques in ArcGIS to analyze and manage geographic data for urban studies, optimizing spatial data workflows and improving accessibility for policymakers.</li>
-                            </ul>
+                <div class="tabs">
+                    <button class="tab-button active" onclick="openTab('skills-tab')">Skills</button>
+                    <button class="tab-button" onclick="openTab('experience-tab')">Experience</button>
+                </div>
+                <div id="skills-tab" class="tab-content active">
+                    <h3>My Skills</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span>Python</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%;"></div>
+                            </div>
+                            <span>90%</span>
                         </div>
-                        <div class="experience-item">
-                            <h4>Systems Engineer, Tata Consultancy Services</h4>
-                            <p class="date">Aug 2022 - July 2023</p>
-                            <ul>
-                                <li>Developed Python scripts to extract, process, and visualize real-time network performance metrics, reducing report generation time from 2 hours to 10 minutes, accelerating business decision-making and improving operational visibility by 40%.</li>
-                                <li>Designed and optimized SQL scripts to fetch, validate, and preprocess network device lists, reducing data inconsistencies by 95% and ensuring accurate processing for downstream operations.</li>
-                                <li>Automated network device discovery and polling by developing a Perl script, increasing monitoring efficiency by 80% and reducing manual effort by over 50 hours per month, enhancing network reliability.</li>
-                            </ul>
+                        <div class="skill-item">
+                            <span>Java</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%;"></div>
+                            </div>
+                            <span>80%</span>
                         </div>
-                        <div class="experience-item">
-                            <h4>Software Engineer, Optum Global Solutions (UHG)</h4>
-                            <p class="date">Aug 2019 - Aug 2022</p>
-                            <ul>
-                                <li>Developed a Python-based automation tool to mock healthcare claims from the production to the test environment, enabling testers to validate real-world data scenarios and reducing manual test case creation time by 70%.</li>
-                                <li>Contributed to the development of a web-based portal that fetched and displayed healthcare data from PL/SQL, enabling the business team to track data without direct database access. Worked on HTML, CSS, and PL/SQL queries, along with TypeScript for data mapping, ensuring seamless integration with APIs and improving accessibility by 60%.</li>
-                                <li>Engineered and optimized SQL queries and stored procedures to process 837 healthcare claims data, improving claims processing efficiency by 90%.</li>
-                            </ul>
+                        <div class="skill-item">
+                            <span>SQL</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%;"></div>
+                            </div>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span>HTML/CSS</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 75%;"></div>
+                            </div>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span>JavaScript</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 70%;"></div>
+                            </div>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span>Machine Learning</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%;"></div>
+                            </div>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span>Data Visualization</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%;"></div>
+                            </div>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span>Geospatial Analysis</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 75%;"></div>
+                            </div>
+                            <span>75%</span>
                         </div>
                     </div>
-                    <div class="skills">
-                        <h3>Technical Skills</h3>
-                        <ul>
-                            <li><strong>Languages and Databases:</strong> Python, Java, C, R, Perl, Oracle PL/SQL, Spark SQL</li>
-                            <li><strong>Web Development/Cloud:</strong> HTML, CSS, PHP, JavaScript, XML, React</li>
-                            <li><strong>ML Libraries:</strong> NumPy, Pandas, Matplotlib, Seaborn, Plotly, Scikit Learn, PyTorch, TensorFlow</li>
-                            <li><strong>Technologies:</strong> Geographic Information Analysis (GIS), Machine Learning (ML), Deep Learning (DL), Data Analytics, Data Science (DS), Business Intelligence (BI)</li>
-                            <li><strong>Tools:</strong> Git, Jenkins, Unix/Linux, VSCode, Eclipse IDE, Postman, Excel, VBA, PowerPoint, Tableau, ArcGIS</li>
-                            <li><strong>Computer Science Fundamentals:</strong> Data Structures & Algorithms, Object-Oriented Programming (OOP), Operating Systems, Design Analysis, Software Development Life Cycle (SDLC)</li>
-                        </ul>
+                </div>
+                <div id="experience-tab" class="tab-content">
+                    <h3>Work Experience</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>Project Lead & Graduate Research Assistant, Indiana University</h4>
+                                <p class="date">Aug 2023 – Present</p>
+                                <ul>
+                                    <li>Leading the Knowledge Indiana Project Team, overseeing research initiatives and coordinating data analytics efforts, including managing information through WordPress and working on various test cases in the Indianapolis Wikipedia.</li>
+                                    <li>Worked on The Polis Center website for user testing, identifying usability issues and improving navigation efficiency.</li>
+                                    <li>Applied GIS techniques in ArcGIS to analyze and manage geographic data for urban studies, optimizing spatial data workflows and improving accessibility for policymakers.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>Systems Engineer, Tata Consultancy Services</h4>
+                                <p class="date">Aug 2022 - July 2023</p>
+                                <ul>
+                                    <li>Developed Python scripts to extract, process, and visualize real-time network performance metrics, reducing report generation time from 2 hours to 10 minutes, accelerating business decision-making and improving operational visibility by 40%.</li>
+                                    <li>Designed and optimized SQL scripts to fetch, validate, and preprocess network device lists, reducing data inconsistencies by 95% and ensuring accurate processing for downstream operations.</li>
+                                    <li>Automated network device discovery and polling by developing a Perl script, increasing monitoring efficiency by 80% and reducing manual effort by over 50 hours per month, enhancing network reliability.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>Software Engineer, Optum Global Solutions (UHG)</h4>
+                                <p class="date">Aug 2019 - Aug 2022</p>
+                                <ul>
+                                    <li>Developed a Python-based automation tool to mock healthcare claims from the production to the test environment, enabling testers to validate real-world data scenarios and reducing manual test case creation time by 70%.</li>
+                                    <li>Contributed to the development of a web-based portal that fetched and displayed healthcare data from PL/SQL, enabling the business team to track data without direct database access. Worked on HTML, CSS, and PL/SQL queries, along with TypeScript for data mapping, ensuring seamless integration with APIs and improving accessibility by 60%.</li>
+                                    <li>Engineered and optimized SQL queries and stored procedures to process 837 healthcare claims data, improving claims processing efficiency by 90%.</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
