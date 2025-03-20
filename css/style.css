@@ -348,17 +348,21 @@ body {
 }
 
 .project-container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
 }
 
 .project-card {
-    width: calc(50% - 10px); /* Two cards per row */
     background-color: #FFFFFF; /* White for cards */
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
 }
 
 .project-img {
@@ -486,8 +490,8 @@ body {
         left: -20px;
     }
 
-    .project-card {
-        width: 100%; /* One card per row on mobile */
+    .project-container {
+        grid-template-columns: 1fr; /* One card per row on mobile */
     }
 
     .project-img {
