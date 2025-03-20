@@ -1,143 +1,101 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skills & Experience - Vaishali Kondoju</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-</head>
-<body>
-    <div class="container">
-        <aside class="sidebar">
-            <div class="profile">
-                <img src="assets/images/profile.jpg" alt="Vaishali Kondoju" class="profile-img">
-                <h3>Vaishali Kondoju</h3>
-                <p>Applied Data Scientist & Software Engineer</p>
+<div id="header-placeholder"></div>
+<main class="main-content">
+    <section id="skills">
+        <h2>Skills & Experience</h2>
+        <div class="tabs">
+            <button class="tab-button active" onclick="openTab('skills-tab')">Skills</button>
+            <button class="tab-button" onclick="openTab('experience-tab')">Experience</button>
+        </div>
+
+        <!-- Skills Tab -->
+        <div id="skills-tab" class="tab-content active">
+            <h3>Skills</h3>
+            <div class="skills-list">
+                <div class="skill-item">
+                    <span>Python</span>
+                    <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+                    <span>90%</span>
+                </div>
+                <div class="skill-item">
+                    <span>SQL</span>
+                    <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                    <span>85%</span>
+                </div>
+                <div class="skill-item">
+                    <span>JavaScript</span>
+                    <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+                    <span>80%</span>
+                </div>
+                <div class="skill-item">
+                    <span>HTML/CSS</span>
+                    <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+                    <span>75%</span>
+                </div>
+                <div class="skill-item">
+                    <span>Tableau</span>
+                    <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
+                    <span>70%</span>
+                </div>
+                <div class="skill-item">
+                    <span>ArcGIS</span>
+                    <div class="progress-bar"><div class="progress" style="width: 65%;"></div></div>
+                    <span>65%</span>
+                </div>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="skills.html">Skills & Experience</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                </ul>
-            </nav>
-        </aside>
-        <main class="main-content">
-            <section id="skills">
-                <h2>Skills & Experience</h2>
-                <div class="tabs">
-                    <button class="tab-button active" onclick="openTab('skills-tab')">Skills</button>
-                    <button class="tab-button" onclick="openTab('experience-tab')">Experience</button>
-                </div>
-                <div id="skills-tab" class="tab-content active">
-                    <h3>My Skills</h3>
-                    <div class="skills-list">
-                        <div class="skill-item">
-                            <span>Python</span>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 90%;"></div>
-                            </div>
-                            <span>90%</span>
-                        </div>
-                        <div class="skill-item">
-                            <span>Java</span>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 80%;"></div>
-                            </div>
-                            <span>80%</span>
-                        </div>
-                        <div class="skill-item">
-                            <span>SQL</span>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 85%;"></div>
-                            </div>
-                            <span>85%</span>
-                        </div>
-                        <div class="skill-item">
-                            <span>HTML/CSS</span>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 75%;"></div>
-                            </div>
-                            <span>75%</span>
-                        </div>
-                        <div class="skill-item">
-                            <span>JavaScript</span>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 70%;"></div>
-                            </div>
-                            <span>70%</span>
-                        </div>
-                        <div class="skill-item">
-                            <span>Machine Learning</span>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 80%;"></div>
-                            </div>
-                            <span>80%</span>
-                        </div>
-                        <div class="skill-item">
-                            <span>Data Visualization</span>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 85%;"></div>
-                            </div>
-                            <span>85%</span>
-                        </div>
-                        <div class="skill-item">
-                            <span>Geospatial Analysis</span>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 75%;"></div>
-                            </div>
-                            <span>75%</span>
-                        </div>
+        </div>
+
+        <!-- Experience Tab -->
+        <div id="experience-tab" class="tab-content">
+            <h3>Experience</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>Graduate Research Assistant</h4>
+                        <p class="date">Aug 2023 – Present</p>
+                        <ul>
+                            <li>Conducted geospatial analysis using ArcGIS to map healthcare facilities, recommending 5 new clinic locations to improve access in underserved areas.</li>
+                            <li>Analyzed social determinants of health, providing insights that increased patient reach by 20%.</li>
+                        </ul>
                     </div>
                 </div>
-                <div id="experience-tab" class="tab-content">
-                    <h3>Work Experience</h3>
-                    <div class="timeline">
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-content">
-                                <h4>Project Lead & Graduate Research Assistant, Indiana University</h4>
-                                <p class="date">Aug 2023 – Present</p>
-                                <ul>
-                                    <li>Leading the Knowledge Indiana Project Team, overseeing research initiatives and coordinating data analytics efforts, including managing information through WordPress and working on various test cases in the Indianapolis Wikipedia.</li>
-                                    <li>Worked on The Polis Center website for user testing, identifying usability issues and improving navigation efficiency.</li>
-                                    <li>Applied GIS techniques in ArcGIS to analyze and manage geographic data for urban studies, optimizing spatial data workflows and improving accessibility for policymakers.</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-content">
-                                <h4>Systems Engineer, Tata Consultancy Services</h4>
-                                <p class="date">Aug 2022 - July 2023</p>
-                                <ul>
-                                    <li>Developed Python scripts to extract, process, and visualize real-time network performance metrics, reducing report generation time from 2 hours to 10 minutes, accelerating business decision-making and improving operational visibility by 40%.</li>
-                                    <li>Designed and optimized SQL scripts to fetch, validate, and preprocess network device lists, reducing data inconsistencies by 95% and ensuring accurate processing for downstream operations.</li>
-                                    <li>Automated network device discovery and polling by developing a Perl script, increasing monitoring efficiency by 80% and reducing manual effort by over 50 hours per month, enhancing network reliability.</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-content">
-                                <h4>Software Engineer, Optum Global Solutions (UHG)</h4>
-                                <p class="date">Aug 2019 - Aug 2022</p>
-                                <ul>
-                                    <li>Developed a Python-based automation tool to mock healthcare claims from the production to the test environment, enabling testers to validate real-world data scenarios and reducing manual test case creation time by 70%.</li>
-                                    <li>Contributed to the development of a web-based portal that fetched and displayed healthcare data from PL/SQL, enabling the business team to track data without direct database access. Worked on HTML, CSS, and PL/SQL queries, along with TypeScript for data mapping, ensuring seamless integration with APIs and improving accessibility by 60%.</li>
-                                    <li>Engineered and optimized SQL queries and stored procedures to process 837 healthcare claims data, improving claims processing efficiency by 90%.</li>
-                                </ul>
-                            </div>
-                        </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>Software Engineer Intern</h4>
+                        <p class="date">May 2023 – Aug 2023</p>
+                        <ul>
+                            <li>Developed a 3-tier web application for employee tracking, improving HR process visibility.</li>
+                            <li>Hosted the application on IU Apache server using Linux, enabling real-time testing.</li>
+                        </ul>
                     </div>
                 </div>
-            </section>
-        </main>
-    </div>
-    <script src="js/main.js"></script>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>Software Engineer</h4>
+                        <p class="date">Jul 2019 – Jul 2022</p>
+                        <ul>
+                            <li>Built automation tools at TCS and Optum, reducing manual effort by 30%.</li>
+                            <li>Developed data pipelines and dashboards, uncovering insights for operational efficiency.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+</div>
+<script src="js/main.js"></script>
+<script>
+    // Load the header dynamically and update the page title
+    fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-placeholder').innerHTML = data;
+            document.title = "Skills & Experience - Vaishali Kondoju";
+        })
+        .catch(error => console.error('Error loading header:', error));
+</script>
 </body>
 </html>
