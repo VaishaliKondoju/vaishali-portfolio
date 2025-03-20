@@ -29,9 +29,15 @@
         <main class="main-content">
             <section id="projects">
                 <h2>Projects</h2>
+                <div class="tabs">
+                    <button class="tab-button active" onclick="openTab('ml-projects-tab')">Machine Learning</button>
+                    <button class="tab-button" onclick="openTab('web-apps-tab')">Web Applications</button>
+                    <button class="tab-button" onclick="openTab('geospatial-projects-tab')">Geospatial Analysis</button>
+                    <button class="tab-button" onclick="openTab('database-projects-tab')">Database Projects</button>
+                </div>
 
                 <!-- Machine Learning Projects -->
-                <div class="project-category">
+                <div id="ml-projects-tab" class="tab-content active">
                     <h3>Machine Learning Projects</h3>
                     <div class="project-container">
                         <div class="project-card">
@@ -48,7 +54,7 @@
                 </div>
 
                 <!-- Web Applications -->
-                <div class="project-category">
+                <div id="web-apps-tab" class="tab-content">
                     <h3>Web Applications</h3>
                     <div class="project-container">
                         <div class="project-card">
@@ -65,7 +71,7 @@
                 </div>
 
                 <!-- Geospatial Analysis Projects -->
-                <div class="project-category">
+                <div id="geospatial-projects-tab" class="tab-content">
                     <h3>Geospatial Analysis Projects</h3>
                     <div class="project-container">
                         <div class="project-card">
@@ -82,7 +88,7 @@
                 </div>
 
                 <!-- Database Projects -->
-                <div class="project-category">
+                <div id="database-projects-tab" class="tab-content">
                     <h3>Database Projects</h3>
                     <div class="project-container">
                         <div class="project-card">
