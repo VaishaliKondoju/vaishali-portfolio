@@ -385,28 +385,31 @@ body {
     color: #666666; /* Medium gray for content */
 }
 
-#contact a {
-    color: #FF6F61; /* Coral accent */
-    text-decoration: none;
-}
-
-#contact a:hover {
-    color: #E65B50; /* Darker coral on hover */
-}
-
-.social-icons {
+.contact-info {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     gap: 15px;
 }
 
-.social-icons i {
-    font-size: 24px;
-    color: #333333;
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.social-icons i:hover {
-    color: #FF6F61; /* Coral accent */
+.contact-item i {
+    font-size: 1.5em;
+    color: #FF6F61; /* Coral for icons */
+}
+
+.contact-item a {
+    font-size: 1.1em;
+    color: #333333; /* Dark gray for links */
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    color: #FF6F61; /* Coral on hover */
 }
 
 /* Responsive Design */
