@@ -9,12 +9,12 @@ body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     color: #fff;
-    background-color: #1A3C34; /* Teal background */
+    background-color: #1B263B; /* Deep navy blue background */
 }
 
 /* Navigation */
 nav {
-    background-color: #0F2A24;
+    background-color: #0D1B2A; /* Darker shade for nav */
     padding: 15px 0;
     position: sticky;
     top: 0;
@@ -40,36 +40,61 @@ nav a {
 }
 
 nav a:hover {
-    color: #A3D9C9;
+    color: #FF6F61; /* Coral accent */
 }
 
 /* Home Section */
 #home {
-    text-align: center;
     padding: 80px 20px;
     min-height: calc(100vh - 60px);
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    background-color: #1B263B; /* Ensure background matches */
+}
+
+.home-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.profile {
+    text-align: center;
+    width: 30%;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.intro {
+    width: 70%;
 }
 
 #home h1 {
     font-size: 3em;
     font-weight: 600;
     margin-bottom: 10px;
+    color: #FFFFFF; /* White text */
 }
 
 #home h2 {
     font-size: 1.5em;
     font-weight: 300;
+    color: #E0E0E0; /* Light gray for secondary text */
     margin-bottom: 20px;
 }
 
 #home p {
-    max-width: 600px;
-    margin: 0 auto;
     font-size: 1.1em;
     font-weight: 300;
+    color: #FFFFFF;
 }
 
 /* About Section */
@@ -77,6 +102,7 @@ nav a:hover {
     padding: 50px 20px;
     max-width: 1000px;
     margin: 0 auto;
+    background-color: #1B263B;
 }
 
 #about h2, #projects h2, #blog h2 {
@@ -84,6 +110,7 @@ nav a:hover {
     font-size: 2.5em;
     font-weight: 600;
     margin-bottom: 30px;
+    color: #FFFFFF;
 }
 
 .about-content {
@@ -109,11 +136,13 @@ nav a:hover {
     font-size: 1.5em;
     font-weight: 600;
     margin-bottom: 5px;
+    color: #FFFFFF;
 }
 
 .profile p {
     font-size: 1em;
     font-weight: 300;
+    color: #E0E0E0;
     margin-bottom: 15px;
 }
 
@@ -123,10 +152,13 @@ nav a:hover {
     gap: 15px;
 }
 
-.social-icons img {
-    width: 24px;
-    height: 24px;
-    filter: invert(1); /* Make icons white */
+.social-icons i {
+    font-size: 24px;
+    color: #fff;
+}
+
+.social-icons i:hover {
+    color: #FF6F61; /* Coral accent */
 }
 
 .bio {
@@ -137,6 +169,7 @@ nav a:hover {
     font-size: 1.1em;
     font-weight: 300;
     margin-bottom: 20px;
+    color: #FFFFFF;
 }
 
 .download-links {
@@ -147,15 +180,15 @@ nav a:hover {
 .download-btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #A3D9C9;
-    color: #1A3C34;
+    background-color: #FF6F61; /* Coral accent */
+    color: #fff;
     text-decoration: none;
     border-radius: 5px;
     font-weight: 400;
 }
 
 .download-btn:hover {
-    background-color: #8CC7B5;
+    background-color: #E65B50; /* Darker coral on hover */
 }
 
 .details {
@@ -171,6 +204,7 @@ nav a:hover {
     font-size: 1.5em;
     font-weight: 600;
     margin-bottom: 15px;
+    color: #FFFFFF;
 }
 
 .skills ul, .education ul {
@@ -181,6 +215,7 @@ nav a:hover {
     font-size: 1em;
     font-weight: 300;
     margin-bottom: 10px;
+    color: #E0E0E0;
 }
 
 /* Projects Section */
@@ -188,6 +223,7 @@ nav a:hover {
     padding: 50px 20px;
     max-width: 1000px;
     margin: 0 auto;
+    background-color: #1B263B;
 }
 
 .project-container {
@@ -218,7 +254,7 @@ nav a:hover {
 }
 
 .project-card a {
-    color: #1A3C34;
+    color: #FF6F61; /* Coral accent */
     text-decoration: none;
     font-weight: 400;
 }
@@ -233,6 +269,11 @@ nav a:hover {
     max-width: 1000px;
     margin: 0 auto;
     text-align: center;
+    background-color: #1B263B;
+}
+
+#blog p {
+    color: #FFFFFF;
 }
 
 /* Contact Section */
@@ -243,26 +284,29 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: #1B263B;
 }
 
 #contact h2 {
     font-size: 2.5em;
     font-weight: 600;
     margin-bottom: 20px;
+    color: #FFFFFF;
 }
 
 #contact p {
     font-size: 1.1em;
     margin-bottom: 20px;
+    color: #FFFFFF;
 }
 
 #contact a {
-    color: #A3D9C9;
+    color: #FF6F61;
     text-decoration: none;
 }
 
 #contact a:hover {
-    color: #8CC7B5;
+    color: #E65B50;
 }
 
 /* Responsive Design */
@@ -271,6 +315,15 @@ nav a:hover {
         flex-direction: column;
         gap: 10px;
         text-align: center;
+    }
+
+    .home-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile, .intro {
+        width: 100%;
     }
 
     .about-content {
