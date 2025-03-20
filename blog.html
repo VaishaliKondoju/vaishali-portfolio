@@ -1,21 +1,38 @@
-<div id="header-placeholder"></div>
-<main class="main-content">
-    <section id="blog">
-        <h2>Blog</h2>
-        <p>Coming soon! I'll be sharing insights on data science, software engineering, and more.</p>
-    </section>
-</main>
-</div>
-<script src="js/main.js"></script>
-<script>
-    // Load the header dynamically and update the page title
-    fetch('header.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('header-placeholder').innerHTML = data;
-            document.title = "Blog - Vaishali Kondoju";
-        })
-        .catch(error => console.error('Error loading header:', error));
-</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Vaishali Kondoju</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+    <main class="main-content">
+        <section id="blog">
+            <h2>Blog</h2>
+            <p>Coming soon! I'll be sharing insights on data science, software engineering, and more.</p>
+        </section>
+    </main>
+    </div>
+    <script src="js/main.js"></script>
+    <script>
+        fetch('header.html')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Failed to load header');
+                }
+                return response.text();
+            })
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Error loading header:', error);
+                document.getElementById('header-placeholder').innerHTML = '<p>Error loading header. Please refresh the page.</p>';
+            });
+    </script>
 </body>
 </html>
