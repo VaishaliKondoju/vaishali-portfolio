@@ -25,13 +25,14 @@ body {
 /* Sidebar styling */
 .sidebar {
     width: 250px;
-    background-color: #121212; /* Deep charcoal, matching the body background */
+    background-color: #111827; /* Dark navy/charcoal mix for soft highlight panel */
     color: #EDEDED; /* Light gray text */
     padding: 40px 20px 20px; /* Added top padding to lower the profile picture */
     position: sticky;
     top: 0;
     height: 100vh; /* Full height of the viewport */
     overflow-y: auto; /* Allow scrolling within the sidebar if needed */
+    border-right: 1px solid #1F1F1F; /* Subtle border to separate from main content */
 }
 
 .sidebar .profile {
