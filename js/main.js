@@ -34,23 +34,24 @@ document.addEventListener('DOMContentLoaded', () => {
     const setActiveClass = () => {
         // Determine the current page URL
         const currentPath = window.location.pathname.split('/').pop() || 'index.html';
-
-        // Map page URLs to menu items
-        const pageMap = {
-            'index.html': 'HOME',
-            'skills.html': 'SKILLS & EXPERIENCE',
-            'projects.html': 'PROJECTS',
-            'contact.html': 'CONTACT',
-            'blog.html': 'BLOG'
-        };
+        console.log('Current Path:', currentPath); // Debug log
 
         // Find the corresponding menu item and add the active class
+        let activeSet = false;
         navLinks.forEach(link => {
-            const linkText = link.textContent.trim().toUpperCase();
-            if (pageMap[currentPath] && pageMap[currentPath].toUpperCase() === linkText) {
+            const linkPath = link.getAttribute('href');
+            console.log('Link Path:', linkPath); // Debug log
+            if (linkPath === currentPath) {
                 link.classList.add('active');
+                activeSet = true;
+                console.log('Active Link Set:', link.textContent.trim()); // Debug log
             }
         });
+
+        // If no active link was set, log a warning
+        if (!activeSet) {
+            console.warn('No active link set for current path:', currentPath);
+        }
     };
 
     // Set the active class on page load
@@ -62,6 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
         link.addEventListener('click', () => {
             removeActiveClasses();
             link.classList.add('active');
+            console.log('Clicked Link:', link.textContent.trim()); // Debug log
         });
     });
 });
