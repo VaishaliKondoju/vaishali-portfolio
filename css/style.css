@@ -25,7 +25,7 @@ body {
 /* Sidebar styling */
 .sidebar {
     width: 250px;
-    background-color: #111827; /* Dark navy/charcoal mix for soft highlight panel */
+    background-color: #161616; /* Slight tint black for better blending */
     color: #EDEDED; /* Light gray text */
     padding: 40px 20px 20px; /* Added top padding to lower the profile picture */
     position: sticky;
@@ -72,8 +72,9 @@ body {
     text-decoration: none;
     font-size: 0.9rem; /* Reduced font size */
     text-transform: uppercase;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease-in, border-bottom 0.3s ease-in; /* Ease-in for hover */
     display: inline-block; /* Needed for border-bottom to work */
+    position: relative; /* For pseudo-element positioning */
 }
 
 .sidebar nav ul li a:hover {
@@ -81,7 +82,26 @@ body {
 }
 
 .sidebar nav ul li a.active {
-    border-bottom: 2px solid #00FFFF; /* Bright cyan underline for active state */
+    color: #EDEDED; /* Keep text color light gray */
+    text-shadow: 0 0 5px #00FFFF; /* Soft cyan glow on active link */
+    border-bottom: 2px solid #00FFFF; /* Bright cyan underline */
+    animation: bounceUnderline 0.5s ease-in-out; /* Bounce animation for underline */
+}
+
+/* Keyframe animation for subtle bounce effect on underline */
+@keyframes bounceUnderline {
+    0% {
+        transform: scaleX(0); /* Start with no underline */
+        transform-origin: center;
+    }
+    50% {
+        transform: scaleX(1.2); /* Slightly overshoot */
+        transform-origin: center;
+    }
+    100% {
+        transform: scaleX(1); /* Settle at normal size */
+        transform-origin: center;
+    }
 }
 
 /* Main content styling */
