@@ -83,9 +83,9 @@ body {
 }
 
 .sidebar nav ul li a.active {
-    color: #EDEDED; /* Keep text color light gray */
-    text-shadow: 0 0 8px #00FFFF, 0 0 12px rgba(0, 255, 255, 0.5); /* Enhanced cyan glow */
-    border-bottom: 3px solid #00FFFF; /* Slightly thicker bright cyan underline */
+    color: #EDEDED !important; /* Ensure active state takes precedence */
+    text-shadow: 0 0 8px #00FFFF, 0 0 12px rgba(0, 255, 255, 0.5) !important; /* Enhanced cyan glow */
+    border-bottom: 3px solid #00FFFF !important; /* Slightly thicker bright cyan underline */
 }
 
 /* Main content styling */
