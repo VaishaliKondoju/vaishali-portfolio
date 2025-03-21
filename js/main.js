@@ -33,24 +33,35 @@ document.addEventListener('DOMContentLoaded', () => {
     // Function to set the active class based on the current page
     const setActiveClass = () => {
         // Determine the current page URL
-        const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+        let currentPath = window.location.pathname.split('/').pop();
+        if (!currentPath || currentPath === '') {
+            currentPath = 'index.html'; // Default to index.html if path is empty
+        }
         console.log('Current Path:', currentPath); // Debug log
 
         // Find the corresponding menu item and add the active class
         let activeSet = false;
         navLinks.forEach(link => {
-            const linkPath = link.getAttribute('href');
-            console.log('Link Path:', linkPath); // Debug log
+            let linkPath = link.getAttribute('href');
+            console.log('Link Path (before normalization):', linkPath); // Debug log
+
+            // Normalize linkPath to remove any leading slashes
+            if (linkPath.startsWith('/')) {
+                linkPath = linkPath.replace('/', '');
+            }
+            console.log('Link Path (after normalization):', linkPath); // Debug log
+
             if (linkPath === currentPath) {
                 link.classList.add('active');
                 activeSet = true;
-                console.log('Active Link Set:', link.textContent.trim()); // Debug log
+                console.log('Active Link Set:', link.textContent.trim(), 'with href:', linkPath); // Debug log
             }
         });
 
         // If no active link was set, log a warning
         if (!activeSet) {
             console.warn('No active link set for current path:', currentPath);
+            console.log('Available Link Paths:', Array.from(navLinks).map(link => link.getAttribute('href'))); // Debug log
         }
     };
 
@@ -63,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
         link.addEventListener('click', () => {
             removeActiveClasses();
             link.classList.add('active');
-            console.log('Clicked Link:', link.textContent.trim()); // Debug log
+            console.log('Clicked Link:', link.textContent.trim(), 'with href:', link.getAttribute('href')); // Debug log
         });
     });
 });
