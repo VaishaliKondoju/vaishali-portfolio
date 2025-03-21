@@ -9,7 +9,8 @@
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    color: #333333;
+    color: #EDEDED; /* Light gray text for readability */
+    background-color: #121212; /* Deep charcoal background */
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -24,8 +25,8 @@ body {
 /* Sidebar styling */
 .sidebar {
     width: 250px;
-    background-color: #2A3F54; /* Muted teal */
-    color: #FFFFFF;
+    background-color: #121212; /* Deep charcoal, matching the body background */
+    color: #EDEDED; /* Light gray text */
     padding: 40px 20px 20px; /* Added top padding to lower the profile picture */
     position: sticky;
     top: 0;
@@ -43,17 +44,18 @@ body {
     height: 120px; /* Increased size */
     border-radius: 50%;
     margin-bottom: 10px;
-    border: 3px solid #FF6F61; /* Coral border */
+    border: 3px solid #00FFFF; /* Bright cyan border */
 }
 
 .sidebar h3 {
     font-size: 1.5rem;
     margin-bottom: 5px;
+    color: #00BFFF; /* Electric blue for headers */
 }
 
 .sidebar p {
     font-size: 0.9rem;
-    color: #FF6F61; /* Changed to coral orange */
+    color: #EDEDED; /* Light gray for description text */
 }
 
 .sidebar nav ul {
@@ -65,7 +67,7 @@ body {
 }
 
 .sidebar nav ul li a {
-    color: #FFFFFF;
+    color: #EDEDED; /* Light gray text */
     text-decoration: none;
     font-size: 0.9rem; /* Reduced font size */
     text-transform: uppercase;
@@ -74,18 +76,18 @@ body {
 }
 
 .sidebar nav ul li a:hover {
-    color: #FF6F61; /* Coral on hover */
+    color: #00FFFF; /* Bright cyan on hover */
 }
 
 .sidebar nav ul li a.active {
-    border-bottom: 2px solid #FF6F61; /* Orange underline for active state */
+    border-bottom: 2px solid #00FFFF; /* Bright cyan underline for active state */
 }
 
 /* Main content styling */
 .main-content {
     flex: 1; /* Take up remaining space */
     padding: 20px 40px 40px; /* Added bottom padding */
-    background-color: #F5F7FA; /* Off-white background */
+    background-color: #121212; /* Deep charcoal background */
     min-height: 100vh; /* Ensure it takes up the full height */
     display: flex;
     flex-direction: column;
@@ -99,8 +101,8 @@ body {
 }
 
 .section-label {
-    font-size: 0.9rem; /* Adjusted for the p styling */
-    color: #FF6F61; /* Coral */
+    font-size: 0.9rem;
+    color: #FF00FF; /* Magenta for section labels */
     text-transform: uppercase;
     margin-bottom: 10px;
 }
@@ -108,11 +110,12 @@ body {
 .about-me h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
+    color: #00BFFF; /* Electric blue for headers */
 }
 
 .bio p {
     font-size: 1.1rem;
-    color: #666666;
+    color: #EDEDED; /* Light gray text */
     margin-bottom: 20px;
 }
 
@@ -123,8 +126,8 @@ body {
 .download-btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #FF6F61; /* Coral */
-    color: #FFFFFF;
+    background-color: #39FF14; /* Neon green for buttons */
+    color: #121212; /* Dark background for contrast */
     text-decoration: none;
     border-radius: 5px;
     margin-right: 10px;
@@ -132,7 +135,8 @@ body {
 }
 
 .download-btn:hover {
-    background-color: #E65B50; /* Darker coral on hover */
+    background-color: #00FFFF; /* Bright cyan on hover */
+    color: #121212; /* Dark text for contrast */
 }
 
 .expertise-container {
@@ -144,11 +148,11 @@ body {
 
 .expertise-card {
     flex: 1 1 150px;
-    background-color: #FFFFFF;
+    background-color: #1F1F1F; /* Slightly lighter dark shade */
     padding: 20px;
     text-align: center;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Darker shadow for depth */
     transition: transform 0.3s ease;
 }
 
@@ -163,34 +167,35 @@ body {
 
 /* Assign different colors to each expertise card icon */
 .expertise-card:nth-child(1) i { /* Software */
-    color: #FF6F61; /* Coral */
+    color: #00FFFF; /* Bright cyan */
 }
 
 .expertise-card:nth-child(2) i { /* Machine Learning */
-    color: #4A90E2; /* Blue */
+    color: #FF00FF; /* Magenta */
 }
 
 .expertise-card:nth-child(3) i { /* Web Applications */
-    color: #50C878; /* Green */
+    color: #39FF14; /* Neon green */
 }
 
 .expertise-card:nth-child(4) i { /* Data Visualization & Analysis */
-    color: #F5A623; /* Yellow */
+    color: #00BFFF; /* Electric blue */
 }
 
 .expertise-card:nth-child(5) i { /* Geospatial Analysis */
-    color: #9B59B6; /* Purple */
+    color: #F5A623; /* Yellow (retained for contrast) */
 }
 
 .expertise-card h3 {
     font-size: 1rem;
-    color: #333333;
+    color: #EDEDED; /* Light gray text */
 }
 
 /* Skills & Experience section */
 #skills h2 {
     font-size: 2rem;
     margin-bottom: 20px;
+    color: #00BFFF; /* Electric blue for headers */
 }
 
 .tabs {
@@ -201,21 +206,22 @@ body {
 
 .tab-button {
     padding: 10px 20px;
-    background-color: #E0E6ED;
+    background-color: #1F1F1F; /* Slightly lighter dark shade */
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    color: #EDEDED; /* Light gray text */
     transition: background-color 0.3s ease;
 }
 
 .tab-button.active {
-    background-color: #FF6F61; /* Coral */
-    color: #FFFFFF;
+    background-color: #39FF14; /* Neon green for active tab */
+    color: #121212; /* Dark text for contrast */
 }
 
 .tab-button:hover {
-    background-color: #FF6F61;
-    color: #FFFFFF;
+    background-color: #00FFFF; /* Bright cyan on hover */
+    color: #121212; /* Dark text for contrast */
 }
 
 .tab-content {
@@ -243,12 +249,13 @@ body {
 .skill-item span:first-child {
     width: 100px;
     font-weight: 500;
+    color: #EDEDED; /* Light gray text */
 }
 
 .skill-item .progress-bar {
     flex: 1;
     height: 10px;
-    background-color: #E0E6ED;
+    background-color: #1F1F1F; /* Slightly lighter dark shade */
     border-radius: 5px;
     overflow: hidden;
     margin: 0 10px;
@@ -256,12 +263,13 @@ body {
 
 .skill-item .progress {
     height: 100%;
-    background-color: #FF6F61; /* Coral */
+    background-color: #00FFFF; /* Bright cyan for progress */
 }
 
 .skill-item span:last-child {
     width: 40px;
     text-align: right;
+    color: #EDEDED; /* Light gray text */
 }
 
 .timeline {
@@ -278,7 +286,7 @@ body {
 .timeline-dot {
     width: 15px;
     height: 15px;
-    background-color: #FF6F61; /* Coral */
+    background-color: #39FF14; /* Neon green for timeline dots */
     border-radius: 50%;
     position: absolute;
     left: -30px;
@@ -292,11 +300,12 @@ body {
 .timeline-content h4 {
     font-size: 1.2rem;
     margin-bottom: 5px;
+    color: #00BFFF; /* Electric blue for headers */
 }
 
 .timeline-content .date {
     font-size: 0.9rem;
-    color: #666666;
+    color: #EDEDED; /* Light gray text */
     margin-bottom: 10px;
 }
 
@@ -307,12 +316,14 @@ body {
 
 .timeline-content ul li {
     margin-bottom: 5px;
+    color: #EDEDED; /* Light gray text */
 }
 
 /* Projects section */
 #projects h2 {
     font-size: 2rem;
     margin-bottom: 20px;
+    color: #00BFFF; /* Electric blue for headers */
 }
 
 .project-container {
@@ -323,10 +334,10 @@ body {
 
 .project-card {
     flex: 1 1 300px;
-    background-color: #FFFFFF;
+    background-color: #1F1F1F; /* Slightly lighter dark shade */
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Darker shadow for depth */
     transition: transform 0.3s ease;
 }
 
@@ -345,40 +356,42 @@ body {
 .project-card h4 {
     font-size: 1.2rem;
     margin-bottom: 10px;
+    color: #00BFFF; /* Electric blue for headers */
 }
 
 .project-card p {
     font-size: 0.9rem;
-    color: #666666;
+    color: #EDEDED; /* Light gray text */
     margin-bottom: 10px;
 }
 
 .project-card .tools {
     font-size: 0.9rem;
-    color: #333333;
+    color: #EDEDED; /* Light gray text */
     margin-bottom: 10px;
 }
 
 .project-links a {
-    color: #FF6F61; /* Coral */
+    color: #00FFFF; /* Bright cyan for links */
     text-decoration: none;
     margin-right: 10px;
     transition: color 0.3s ease;
 }
 
 .project-links a:hover {
-    color: #E65B50; /* Darker coral */
+    color: #39FF14; /* Neon green on hover */
 }
 
 /* Contact section */
 #contact h2 {
     font-size: 2rem;
     margin-bottom: 20px;
+    color: #00BFFF; /* Electric blue for headers */
 }
 
 #contact p {
     font-size: 1.1rem;
-    color: #666666;
+    color: #EDEDED; /* Light gray text */
     margin-bottom: 20px;
 }
 
@@ -394,27 +407,28 @@ body {
 
 .contact-item i {
     font-size: 1.5rem;
-    color: #FF6F61; /* Coral */
+    color: #00FFFF; /* Bright cyan for icons */
     margin-right: 10px;
 }
 
 .contact-item a {
-    color: #333333;
+    color: #EDEDED; /* Light gray text */
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .contact-item a:hover {
-    color: #FF6F61; /* Coral */
+    color: #39FF14; /* Neon green on hover */
 }
 
 /* Blog section */
 #blog h2 {
     font-size: 2rem;
     margin-bottom: 20px;
+    color: #00BFFF; /* Electric blue for headers */
 }
 
 #blog p {
     font-size: 1.1rem;
-    color: #666666;
+    color: #EDEDED; /* Light gray text */
 }
