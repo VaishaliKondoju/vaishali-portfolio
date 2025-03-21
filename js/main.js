@@ -30,26 +30,28 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
+    // Function to normalize URLs (remove leading/trailing slashes and base URL)
+    const normalizePath = (path) => {
+        // Remove leading/trailing slashes and any base URL
+        let normalized = path.replace(/^\/|\/$/g, '').split('/').pop();
+        // If the path is empty or just "/", map it to "index.html"
+        if (!normalized || normalized === '') {
+            normalized = 'index.html';
+        }
+        return normalized;
+    };
+
     // Function to set the active class based on the current page
     const setActiveClass = () => {
         // Determine the current page URL
-        let currentPath = window.location.pathname.split('/').pop();
-        if (!currentPath || currentPath === '') {
-            currentPath = 'index.html'; // Default to index.html if path is empty
-        }
-        console.log('Current Path:', currentPath); // Debug log
+        let currentPath = normalizePath(window.location.pathname);
+        console.log('Normalized Current Path:', currentPath); // Debug log
 
         // Find the corresponding menu item and add the active class
         let activeSet = false;
         navLinks.forEach(link => {
-            let linkPath = link.getAttribute('href');
-            console.log('Link Path (before normalization):', linkPath); // Debug log
-
-            // Normalize linkPath to remove any leading slashes
-            if (linkPath.startsWith('/')) {
-                linkPath = linkPath.replace('/', '');
-            }
-            console.log('Link Path (after normalization):', linkPath); // Debug log
+            let linkPath = normalizePath(link.getAttribute('href'));
+            console.log('Normalized Link Path:', linkPath); // Debug log
 
             if (linkPath === currentPath) {
                 link.classList.add('active');
@@ -61,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // If no active link was set, log a warning
         if (!activeSet) {
             console.warn('No active link set for current path:', currentPath);
-            console.log('Available Link Paths:', Array.from(navLinks).map(link => link.getAttribute('href'))); // Debug log
+            console.log('Available Link Paths:', Array.from(navLinks).map(link => normalizePath(link.getAttribute('href')))); // Debug log
         }
     };
 
