@@ -79,7 +79,7 @@ body {
 /* Main content styling */
 .main-content {
     flex: 1; /* Take up remaining space */
-    padding: 20px 40px; /* Reduced top padding to minimize space */
+    padding: 20px 40px 40px; /* Added bottom padding */
     background-color: #F5F7FA; /* Off-white background */
     min-height: 100vh; /* Ensure it takes up the full height */
     display: flex;
@@ -202,10 +202,14 @@ body {
 }
 
 .skills-list {
-    max-width: 600px;
+    display: flex; /* Use flexbox to create columns */
+    flex-wrap: wrap; /* Allow items to wrap into multiple columns */
+    gap: 20px; /* Space between columns and rows */
+    max-width: 800px; /* Increased max-width to accommodate two columns */
 }
 
 .skill-item {
+    flex: 1 1 calc(50% - 20px); /* Each item takes up 50% of the container width minus the gap */
     display: flex;
     align-items: center;
     margin-bottom: 15px;
