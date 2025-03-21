@@ -26,7 +26,7 @@ body {
     width: 250px;
     background-color: #2A3F54; /* Muted teal */
     color: #FFFFFF;
-    padding: 20px;
+    padding: 40px 20px 20px; /* Added top padding to lower the profile picture */
     position: sticky;
     top: 0;
     height: 100vh; /* Full height of the viewport */
@@ -39,8 +39,8 @@ body {
 }
 
 .sidebar .profile-img {
-    width: 100px;
-    height: 100px;
+    width: 120px; /* Increased size */
+    height: 120px; /* Increased size */
     border-radius: 50%;
     margin-bottom: 10px;
     border: 3px solid #FF6F61; /* Coral border */
@@ -53,7 +53,7 @@ body {
 
 .sidebar p {
     font-size: 0.9rem;
-    color: #B0C4DE; /* Light blue-gray */
+    color: #FF6F61; /* Changed to coral orange */
 }
 
 .sidebar nav ul {
@@ -67,13 +67,17 @@ body {
 .sidebar nav ul li a {
     color: #FFFFFF;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 0.9rem; /* Reduced font size */
     text-transform: uppercase;
     transition: color 0.3s ease;
 }
 
 .sidebar nav ul li a:hover {
     color: #FF6F61; /* Coral on hover */
+}
+
+.sidebar nav ul li a.active {
+    color: #FF6F61; /* Coral for active state */
 }
 
 /* Main content styling */
