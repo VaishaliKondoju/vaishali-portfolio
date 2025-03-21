@@ -72,13 +72,14 @@ body {
     text-decoration: none;
     font-size: 0.9rem; /* Reduced font size */
     text-transform: uppercase;
-    transition: color 0.3s ease-in, border-bottom 0.3s ease-in; /* Ease-in for hover */
+    transition: color 0.3s ease-in, text-shadow 0.3s ease-in; /* Smooth transition for hover */
     display: inline-block; /* Needed for border-bottom to work */
     position: relative; /* For pseudo-element positioning */
 }
 
 .sidebar nav ul li a:hover {
     color: #00FFFF; /* Bright cyan on hover */
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.5); /* Subtle cyan glow on hover */
 }
 
 .sidebar nav ul li a.active {
@@ -135,12 +136,13 @@ body {
     text-decoration: none;
     border-radius: 5px;
     margin-right: 10px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .download-btn:hover {
     background-color: #00FFFF; /* Bright cyan on hover */
     color: #121212; /* Dark text for contrast */
+    box-shadow: 0 0 8px rgba(0, 255, 255, 0.5); /* Subtle cyan glow on hover */
 }
 
 .expertise-container {
@@ -157,11 +159,12 @@ body {
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Darker shadow for depth */
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .expertise-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Stronger shadow on hover */
 }
 
 .expertise-card i {
@@ -215,17 +218,19 @@ body {
     border-radius: 5px;
     cursor: pointer;
     color: #EDEDED; /* Light gray text */
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .tab-button.active {
     background-color: #39FF14; /* Neon green for active tab */
     color: #121212; /* Dark text for contrast */
+    box-shadow: 0 0 8px rgba(57, 255, 20, 0.5); /* Subtle neon green glow */
 }
 
 .tab-button:hover {
     background-color: #00FFFF; /* Bright cyan on hover */
     color: #121212; /* Dark text for contrast */
+    box-shadow: 0 0 8px rgba(0, 255, 255, 0.5); /* Subtle cyan glow on hover */
 }
 
 .tab-content {
@@ -342,11 +347,12 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Darker shadow for depth */
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Stronger shadow on hover */
 }
 
 .project-img {
@@ -379,11 +385,12 @@ body {
     color: #00FFFF; /* Bright cyan for links */
     text-decoration: none;
     margin-right: 10px;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 .project-links a:hover {
     color: #39FF14; /* Neon green on hover */
+    text-shadow: 0 0 5px rgba(57, 255, 20, 0.5); /* Subtle neon green glow on hover */
 }
 
 /* Contact section */
@@ -418,11 +425,12 @@ body {
 .contact-item a {
     color: #EDEDED; /* Light gray text */
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 .contact-item a:hover {
     color: #39FF14; /* Neon green on hover */
+    text-shadow: 0 0 5px rgba(57, 255, 20, 0.5); /* Subtle neon green glow on hover */
 }
 
 /* Blog section */
