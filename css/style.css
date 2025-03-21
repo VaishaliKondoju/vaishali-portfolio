@@ -83,25 +83,8 @@ body {
 
 .sidebar nav ul li a.active {
     color: #EDEDED; /* Keep text color light gray */
-    text-shadow: 0 0 5px #00FFFF; /* Soft cyan glow on active link */
-    border-bottom: 2px solid #00FFFF; /* Bright cyan underline */
-    animation: bounceUnderline 0.5s ease-in-out forwards; /* Bounce animation for underline */
-}
-
-/* Keyframe animation for subtle bounce effect on underline */
-@keyframes bounceUnderline {
-    0% {
-        transform: scaleX(0); /* Start with no underline */
-        transform-origin: center;
-    }
-    50% {
-        transform: scaleX(1.2); /* Slightly overshoot */
-        transform-origin: center;
-    }
-    100% {
-        transform: scaleX(1); /* Settle at normal size */
-        transform-origin: center;
-    }
+    text-shadow: 0 0 8px #00FFFF, 0 0 12px rgba(0, 255, 255, 0.5); /* Enhanced cyan glow */
+    border-bottom: 3px solid #00FFFF; /* Slightly thicker bright cyan underline */
 }
 
 /* Main content styling */
